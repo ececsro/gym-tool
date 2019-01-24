@@ -14,7 +14,7 @@ public class WebController {
 	
 	@GetMapping("/hello-mustache")
 	public String HelloTemplates(Model model) {
-		model.addAttribute("name","Juan");
+		model.addAttribute("name","Pedro");
 		return "hello-templates";
 	}
 }
