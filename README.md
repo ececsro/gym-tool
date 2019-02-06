@@ -32,41 +32,48 @@ Bob-->Alice: Checking with John...
 Alice->John: Yes... John, how are you?
 ```
 
-**Usuario**: Entidad que almacena los datos del usuario del gimnasio.
+**Usuario**: Entidad que almacena los datos de un usuario dado de alta en el gimnasio.
  - ID
  - Nombre
  - Apellido
  - Contraseña
  - Subscripción
- - Rutinas Favoritas
- - Rutina Actual
+ - Lista de Rutinas Favoritas
+ - Lista de Clases Apuntadas
 
-**Subscripción**: Define el tipo de subscripción contratada en el gimnasio del usuario. Esto define las Salas disponibles y las Rutinas disponibles del cliente.
+**Subscripción**: Entidad que describe una subcripción del gimnasio: Existen varios tipos (Común, Medio, Premium). Cada subscripción tiene un precio y una serie de servicios acorde con el precio.
  - ID
  - Nombre
- - Costes
+ - Coste
  - Descripción
- - Lista de Salas Disponibles
+ - Lista de Clases Disponibles
  - Lista de Rutinas Disponibles
  - Fecha de Contratación
 
-**Sala**: Define cada sala del gimnasio. 
+**Clase**: Define cada clase que ofrece el gimnasio.
  - ID
  - Nombre
  - Descripción
- - Número de Planta
- - Disponibilidad
- - Es Gratis
-
-**Disponibilidad**: Calendario de fechas disponibles y no disponibles.
+ - Máximo de Usuarios
+ - Lista de Usuarios apuntados
 
 **Rutina**: Define cada Rutina disponible para los clientes.
  - ID
  - Nombre
  - Descripción
- - Lista de Salas necesarias para realizarla
+ - Lista de Entrenamientos de la rutina
  
-**Favoritas**: Lista de Rutinas Favoritas de cada usuario.
+ **Entrenamiento**: Define cada Entrenamiento disponible para las rutinas.
+ - ID
+ - Nombre
+ - Descripción
+ - Lista de Ejercicios
+ 
+ **Ejercicios**: Define cada Ejercicio disponible para los entrenamientos.
+ - ID
+ - Nombre
+ - Descripción
+ - Imagen
 
 ## Servicio Interno
 El servicio interno de Gym Tool ofrece la posibilidad de:
