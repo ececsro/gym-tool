@@ -73,6 +73,41 @@ El servicio interno de Gym Tool ofrece la posibilidad de:
 
  - Sacar en PDF la Rutina que el usuario indique.
  - Sacar la Lista de Clases que el usuario está apuntado.
+ 
+ ## Pantallas de la aplicación
+Se especifican los wireframes de las principales pantallas de Gym Tool
+
+**Pantalla Inicial**
+
+![enter image description here](https://lh3.googleusercontent.com/Q3Pm-5GcA4Sg46-KxoQTU632IPalqO84Be96QGSX1BqTQGuRp4vG50K7izajPDL_EVkK21CtAJ8)
+
+**Pantalla de Registro de Usuarios**
+
+![enter image description here](https://lh3.googleusercontent.com/CRrTp0ZNrD-ZLyMFIWpeKlm8GF11wsq6ZRXY1iWv-t3cebN3wK2RIndIzGhBUgVPgAWKrtQuBus)
+
+**Pantalla de Log In**
+
+![enter image description here](https://lh3.googleusercontent.com/8rltkS-lVh5arPnq4FEBoc33ZJCnrlxmh7jokL1FlfshNGh8jenGuAIpt-KzRPiOuX8-R_aYjEU)
+
+**Pantalla de Sesión de Usuario**
+
+![enter image description here](https://lh3.googleusercontent.com/fjky4JEIhm0KSv4ASrMgBkyCfR71GyvEHFT10oHHgRaX4cm_VQ39O4jUqz4yL510oyCyso13lj4)
+
+**Pantalla de Lista de Rutinas (depende si entra a RutinasFree o las Rutinas del User)*
+
+![enter image description here](https://lh3.googleusercontent.com/0SHJ-u9oe9QuN2svCScfWjgMN7xvOf5tUm0L5TWR88ABKjwJaPI_y4Zzm8pVUDxX5bonB2G75IM)
+
+**Pantalla de Descripción de una Rutina**
+
+![enter image description here](https://lh3.googleusercontent.com/GWMUru0k1yiPcyipwBtaECXp9B9aDvuty5I4PUQg_KqPwLk2l5usfUVjndBr7sMK_gY6x8jLVYo)
+
+**Pantalla de Descripción de un Entrenamiento**
+
+![enter image description here](https://lh3.googleusercontent.com/ezO8Bg4ez64he7KXWHWiU209GA7CGAEK2mhHz7DwRSlM9CyLzOxwV_zfxiX-rPxL_UGjErMWJjA)
+
+**Pantalla de Lista de Clases Disponibles / No disponibles / Apuntadas**
+
+![enter image description here](https://lh3.googleusercontent.com/MLA4h6Oj3LCjlaPZhfqLHVs_ZUTbM1QpaAKB5wGhzgGEdcQr3tcufCDmFQjveFtINue8eWD7szU)
 
 ## Equipo
 |Nombre|Apellidos|Correo electrónico|Github
