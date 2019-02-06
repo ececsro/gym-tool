@@ -21,17 +21,7 @@ El usuario que se ha registrado en el gimnasio podrá:
  
 ## Entidades Principales
 
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
+[DIAGRAMA DE ENTIDADES](https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiZ3JhcGggVERcblVzdWFyaW8gLS0-IFN1c2NyaXBjacOzblxuQShSdXRpbmFzRmF2b3JpdGFzKSAtLT4gUnV0aW5hcyBcblVzdWFyaW8gLS0-IEEoUnV0aW5hc0Zhdm9yaXRhcylcbkIoQ2xhc2VzQXB1bnRhZGFzKSAtLT4gQ2xhc2VzXG5Vc3VhcmlvIC0tPiBCKENsYXNlc0FwdW50YWRhcylcblN1c2NyaXBjacOzbiAtLT4gUnV0aW5hc1xuU3VzY3JpcGNpw7NuIC0tPiBDbGFzZXNcblJ1dGluYXMgLS0-IEVudHJlbmFtaWVudG9zXG5FbnRyZW5hbWllbnRvcyAtLT4gRWplcmNpY2lvc1xuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0)
 
 **Usuario**: Entidad que almacena los datos de un usuario dado de alta en el gimnasio.
  - ID
