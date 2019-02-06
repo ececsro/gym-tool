@@ -25,7 +25,7 @@ graph TD;
     Subscripción-->Rutina;
     Usuario-->Favoritas;
     Rutina-->Favoritas;
-    Rutina-->Sala
+    Rutina-->Sala;
 ```
 **Usuario**: Entidad que almacena los datos del usuario del gimnasio.
  - ID
