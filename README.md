@@ -7,11 +7,12 @@ Es una aplicación web que ofrece servicios de gestión de un gimnasio. Desde el
 **Funcionalidad Pública**
 El usuario sin hacer Log In podrá realizar la siguiente funcionalidad:
  - Consultar Rutinas Free, ciertas rutinas están abiertas al público y no es necesario ser cliente del gimnasio.
- - Darse de alta en una Subscripción
+ - Darse de alta como usuario del gimnasio (elegir una suscripción)
 
 **Funcionalidad Privada**
 El usuario que se ha registrado en el gimnasio podrá:
- - Consultar las Rutinas disponibles en esa Subscripción
+ - Cambiar la suscripción elegida
+ - Consultar las Rutinas disponibles en esa Suscripción
  - Establecer Rutinas Favoritas
  - Descargar Rutinas en formato PDF o Word (valorar formato) a través de otra aplicación de Servicio Interno
  - Consultar las Clases disponibles
@@ -20,59 +21,93 @@ El usuario que se ha registrado en el gimnasio podrá:
  
 ## Entidades Principales
 
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+![Entidades](https://lh3.googleusercontent.com/kLFb6NB2ofyC-5d6LtP_TR7xpEbuDae-w7sL_e12eyDMTnikBpTjZHFSlqoPgbEHHsPeDR2fBqA "Entidades")
 
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-**Usuario**: Entidad que almacena los datos del usuario del gimnasio.
+**Usuario**: Entidad que almacena los datos de un usuario dado de alta en el gimnasio.
  - ID
  - Nombre
  - Apellido
  - Contraseña
- - Subscripción
- - Rutinas Favoritas
- - Rutina Actual
+ - Número de Tarjeta
+ - Imagen de Perfil
+ - Suscripción Elegida
+ - Lista de Rutinas Favoritas
+ - Lista de Clases Apuntadas
 
-**Subscripción**: Define el tipo de subscripción contratada en el gimnasio del usuario. Esto define las Salas disponibles y las Rutinas disponibles del cliente.
+**Suscripción**: Entidad que describe una subcripción del gimnasio: Existen varios tipos (Común, Medio, Premium). Cada suscripción tiene un precio y una serie de servicios acorde con el precio.
  - ID
  - Nombre
- - Costes
+ - Coste
  - Descripción
- - Lista de Salas Disponibles
+ - Lista de Clases Disponibles
  - Lista de Rutinas Disponibles
  - Fecha de Contratación
 
-**Sala**: Define cada sala del gimnasio. 
+**Clase**: Define cada clase que ofrece el gimnasio.
  - ID
  - Nombre
  - Descripción
- - Número de Planta
- - Disponibilidad
- - Es Gratis
-
-**Disponibilidad**: Calendario de fechas disponibles y no disponibles.
+ - Máximo de Usuarios
+ - Lista de Usuarios apuntados
 
 **Rutina**: Define cada Rutina disponible para los clientes.
  - ID
  - Nombre
  - Descripción
- - Lista de Salas necesarias para realizarla
+ - Lista de Entrenamientos de la rutina
  
-**Favoritas**: Lista de Rutinas Favoritas de cada usuario.
+ **Entrenamiento**: Define cada Entrenamiento disponible para las rutinas.
+ - ID
+ - Nombre
+ - Descripción
+ - Lista de Ejercicios
+ 
+ **Ejercicios**: Define cada Ejercicio disponible para los entrenamientos.
+ - ID
+ - Nombre
+ - Descripción
+ - Imagen
 
 ## Servicio Interno
 El servicio interno de Gym Tool ofrece la posibilidad de:
 
  - Sacar en PDF la Rutina que el usuario indique.
  - Sacar la Lista de Clases que el usuario está apuntado.
+ 
+ ## Pantallas de la aplicación
+Se especifican los wireframes de las principales pantallas de Gym Tool
+
+**Pantalla Inicial**
+
+![enter image description here](https://lh3.googleusercontent.com/Q3Pm-5GcA4Sg46-KxoQTU632IPalqO84Be96QGSX1BqTQGuRp4vG50K7izajPDL_EVkK21CtAJ8)
+
+**Pantalla de Registro de Usuarios**
+
+![enter image description here](https://lh3.googleusercontent.com/CRrTp0ZNrD-ZLyMFIWpeKlm8GF11wsq6ZRXY1iWv-t3cebN3wK2RIndIzGhBUgVPgAWKrtQuBus)
+
+**Pantalla de Log In**
+
+![enter image description here](https://lh3.googleusercontent.com/8rltkS-lVh5arPnq4FEBoc33ZJCnrlxmh7jokL1FlfshNGh8jenGuAIpt-KzRPiOuX8-R_aYjEU)
+
+**Pantalla de Sesión de Usuario**
+
+![enter image description here](https://lh3.googleusercontent.com/fjky4JEIhm0KSv4ASrMgBkyCfR71GyvEHFT10oHHgRaX4cm_VQ39O4jUqz4yL510oyCyso13lj4)
+
+**Pantalla de Lista de Rutinas (depende si entra a RutinasFree o las Rutinas del User)*
+
+![enter image description here](https://lh3.googleusercontent.com/0SHJ-u9oe9QuN2svCScfWjgMN7xvOf5tUm0L5TWR88ABKjwJaPI_y4Zzm8pVUDxX5bonB2G75IM)
+
+**Pantalla de Descripción de una Rutina**
+
+![enter image description here](https://lh3.googleusercontent.com/GWMUru0k1yiPcyipwBtaECXp9B9aDvuty5I4PUQg_KqPwLk2l5usfUVjndBr7sMK_gY6x8jLVYo)
+
+**Pantalla de Descripción de un Entrenamiento**
+
+![enter image description here](https://lh3.googleusercontent.com/ezO8Bg4ez64he7KXWHWiU209GA7CGAEK2mhHz7DwRSlM9CyLzOxwV_zfxiX-rPxL_UGjErMWJjA)
+
+**Pantalla de Lista de Clases Disponibles / No disponibles / Apuntadas**
+
+![enter image description here](https://lh3.googleusercontent.com/MLA4h6Oj3LCjlaPZhfqLHVs_ZUTbM1QpaAKB5wGhzgGEdcQr3tcufCDmFQjveFtINue8eWD7szU)
 
 ## Equipo
 |Nombre|Apellidos|Correo electrónico|Github
