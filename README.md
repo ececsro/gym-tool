@@ -7,25 +7,23 @@ Es una aplicación web que ofrece servicios de gestión de un gimnasio. Desde el
 **Funcionalidad Pública**
 El usuario sin hacer Log In podrá realizar la siguiente funcionalidad:
  - Navegar por la aplicación web.
- - Reservar una sala gratis. Ciertas salas del gimnasio están abiertas al público y no es necesario ser cliente del gimnasio.
+ - Consultar Rutinas Free, ciertas rutinas están abiertas al público y no es necesario ser cliente del gimnasio.
+ - Darse de alta en una Subscripción
 
 **Funcionalidad Privada**
 El usuario que se ha registrado en el gimnasio podrá:
- - Darse de alta en una Subscripción
- - Darse de alta en una Rutina disponible en esa Subscripción
- - Reservar salas gratis y privadas.
+ - Consultar las Rutinas disponibles en esa Subscripción
  - Establecer Rutinas Favoritas
+ - Consultar las Clases disponibles
+ - Apuntarse a Clases
  
 ## Entidades Principales
 ```mermaid
 graph TD;
     Usuario-->Subscripción;
-    Subscripción-->Sala;
-    Sala-->Disponibilidad;
     Subscripción-->Rutina;
     Usuario-->Favoritas;
     Rutina-->Favoritas;
-    Rutina-->Sala;
 ```
 **Usuario**: Entidad que almacena los datos del usuario del gimnasio.
  - ID
