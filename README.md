@@ -20,7 +20,7 @@ El usuario que se ha registrado en el gimnasio podrá:
  
 ## Entidades Principales
 ```mermaid
-graph TD;
+sequenceDiagram
     Usuario-->Subscripción;
     Subscripción-->Rutina;
     Usuario-->Favoritas;
