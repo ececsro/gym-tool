@@ -7,10 +7,11 @@ Es una aplicación web que ofrece servicios de gestión de un gimnasio. Desde el
 **Funcionalidad Pública**
 El usuario sin hacer Log In podrá realizar la siguiente funcionalidad:
  - Consultar Rutinas Free, ciertas rutinas están abiertas al público y no es necesario ser cliente del gimnasio.
- - Darse de alta en una Subscripción
+ - Darse de alta como usuario del gimnasio (elegir una subscripción)
 
 **Funcionalidad Privada**
 El usuario que se ha registrado en el gimnasio podrá:
+ - Cambiar la subscripción elegida
  - Consultar las Rutinas disponibles en esa Subscripción
  - Establecer Rutinas Favoritas
  - Descargar Rutinas en formato PDF o Word (valorar formato) a través de otra aplicación de Servicio Interno
@@ -37,7 +38,9 @@ Alice->John: Yes... John, how are you?
  - Nombre
  - Apellido
  - Contraseña
- - Subscripción
+ - Número de Tarjeta
+ - Imagen de Perfil
+ - Subscripción Elegida
  - Lista de Rutinas Favoritas
  - Lista de Clases Apuntadas
 
