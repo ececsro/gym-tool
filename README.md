@@ -6,7 +6,6 @@ Es una aplicación web que ofrece servicios de gestión de un gimnasio. Desde el
 
 **Funcionalidad Pública**
 El usuario sin hacer Log In podrá realizar la siguiente funcionalidad:
- - Navegar por la aplicación web.
  - Consultar Rutinas Free, ciertas rutinas están abiertas al público y no es necesario ser cliente del gimnasio.
  - Darse de alta en una Subscripción
 
@@ -14,8 +13,10 @@ El usuario sin hacer Log In podrá realizar la siguiente funcionalidad:
 El usuario que se ha registrado en el gimnasio podrá:
  - Consultar las Rutinas disponibles en esa Subscripción
  - Establecer Rutinas Favoritas
+ - Descargar Rutinas en formato PDF o Word (valorar formato) a través de otra aplicación de Servicio Interno
  - Consultar las Clases disponibles
  - Apuntarse a Clases
+ - Descargar Horario de Clases Apuntadas en formato PDF o Word a través de otra aplicación de Servicio Interno
  
 ## Entidades Principales
 ```mermaid
@@ -65,7 +66,7 @@ graph TD;
 El servicio interno de Gym Tool ofrece la posibilidad de:
 
  - Sacar en PDF la Rutina que el usuario indique.
- - Sacar el Calendario en PDF de la Disponibilidad de una sala concreta.
+ - Sacar la Lista de Clases que el usuario está apuntado.
 
 ## Equipo
 |Nombre|Apellidos|Correo electrónico|Github
