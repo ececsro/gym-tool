@@ -44,7 +44,7 @@ Alice->John: Yes... John, how are you?
 **Subscripción**: Define el tipo de subscripción contratada en el gimnasio del usuario. Esto define las Salas disponibles y las Rutinas disponibles del cliente.
  - ID
  - Nombre
- - Coste
+ - Costes
  - Descripción
  - Lista de Salas Disponibles
  - Lista de Rutinas Disponibles
