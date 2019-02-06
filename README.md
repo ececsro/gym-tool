@@ -21,7 +21,7 @@ El usuario que se ha registrado en el gimnasio podrá:
  
 ## Entidades Principales
 
-[DIAGRAMA DE ENTIDADES](https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiZ3JhcGggVERcblVzdWFyaW8gLS0-IFN1c2NyaXBjacOzblxuQShSdXRpbmFzRmF2b3JpdGFzKSAtLT4gUnV0aW5hcyBcblVzdWFyaW8gLS0-IEEoUnV0aW5hc0Zhdm9yaXRhcylcbkIoQ2xhc2VzQXB1bnRhZGFzKSAtLT4gQ2xhc2VzXG5Vc3VhcmlvIC0tPiBCKENsYXNlc0FwdW50YWRhcylcblN1c2NyaXBjacOzbiAtLT4gUnV0aW5hc1xuU3VzY3JpcGNpw7NuIC0tPiBDbGFzZXNcblJ1dGluYXMgLS0-IEVudHJlbmFtaWVudG9zXG5FbnRyZW5hbWllbnRvcyAtLT4gRWplcmNpY2lvc1xuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0)
+![Entidades](https://lh3.googleusercontent.com/kLFb6NB2ofyC-5d6LtP_TR7xpEbuDae-w7sL_e12eyDMTnikBpTjZHFSlqoPgbEHHsPeDR2fBqA "Entidades")
 
 **Usuario**: Entidad que almacena los datos de un usuario dado de alta en el gimnasio.
  - ID
