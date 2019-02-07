@@ -93,9 +93,9 @@ Se especifican los wireframes de las principales pantallas de Gym Tool
 
 ![enter image description here](https://lh3.googleusercontent.com/fjky4JEIhm0KSv4ASrMgBkyCfR71GyvEHFT10oHHgRaX4cm_VQ39O4jUqz4yL510oyCyso13lj4)
 
-**Pantalla de Lista de Rutinas (depende si entra a RutinasFree o las Rutinas del User)*
+**Pantalla de Lista de Rutinas**
 
-![enter image description here](https://lh3.googleusercontent.com/0SHJ-u9oe9QuN2svCScfWjgMN7xvOf5tUm0L5TWR88ABKjwJaPI_y4Zzm8pVUDxX5bonB2G75IM)
+![enter image description here](https://lh3.googleusercontent.com/6SdmLgpxTWzdbaoNQT_SVgWCIurv-Ok4TTAJYtN2x-juz17bkzw72LNhzgAT-oEflTmcRr2RyFc)
 
 **Pantalla de Descripción de una Rutina**
 
