@@ -20,17 +20,19 @@ public class WebController {
 		return "register.html";
 	}
 	
-	@GetMapping("/dashboard")
+	@GetMapping("/routineList")
 	public String HelloTemplates(Model model) {
 		List<Item> listAnything = new ArrayList<Item>();
-		listAnything.add(new Item("caca","323232"));
-		listAnything.add(new Item("Pepe","2"));
+		listAnything.add(new Item("caca","323232",true));
+		listAnything.add(new Item("Pepe","2",false));
 		
-		model.addAttribute("isEmptyFavRoutine",listAnything.isEmpty());
-		model.addAttribute("isEmptyClass",listAnything.isEmpty());
+		List<Item> listAvailable = new ArrayList<Item>();
+		listAvailable.add(new Item("caca","323232",true));
+		listAvailable.add(new Item("Pepe","2",false));
 		
-		model.addAttribute("routine",listAnything);
-		model.addAttribute("class",listAnything);
-		return "dashboard";
+		
+		model.addAttribute("routine",listAvailable);
+		model.addAttribute("routineNotAvailable",listAnything);
+		return "routineList";
 	}
 }

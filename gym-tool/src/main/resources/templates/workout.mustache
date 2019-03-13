@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+  <title>Gimnasio Paco</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Gimnasio Paco</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#"> Rutinas</a></li>
+      <li><a href="#">Clases</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="page-header">
+    <h1>
+      Entrenamiento {{name}}
+    </h1>
+    <p>
+      {{description}}
+    </p>
+  </div>
+  <div class="container">
+    <h2>Ejercicios del entrenamiento </h2>
+    <p>Tiempo del entrenamiento: {{time}}</p>
+    <p>Objetivo del entrenamiento: {{objective}}</p>
+    <br>
+    {{#pratices}}
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h4>Ejercicio {{name}}</h4>
+      </div>
+      <div class="panel-body">
+        {{description}}
+        <div class="panel-body pull-right"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image"></div>
+      </div>
+    </div>
+    {{/pratices}}
+  </div>
+</div>
+</body>
+</html>
