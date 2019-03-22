@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.diduslabs</groupId>
 	<artifactId>gym-tool</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>csro-latest</version>
 	<name>gym-tool</name>
 	<description>Application web to manage a gym</description>
 
