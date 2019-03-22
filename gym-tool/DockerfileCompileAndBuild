@@ -19,5 +19,5 @@ FROM openjdk:8-jdk
 RUN mkdir /work_dir
 COPY --from=builder /usr/local/src/work_dir/target/gym-tool-csro-latest.jar /work_dir
 WORKDIR /work_dir
-EXPOSE 8443
+EXPOSE 8080
 CMD ["java", "-jar", "/work_dir/gym-tool-csro-latest.jar"]
