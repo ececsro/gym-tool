@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1  
+kind: Ingress  
+metadata:  
+  name: games-info-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: "/"
+spec:  
+  rules:
+  - host: games-info.minikube.io
+    http:
+      paths:
+      - path: /home/
+        backend:
+          serviceName: games-info-server-service
+          servicePort: 31708
+      - path: /send/
+        backend:
+          serviceName: games-info-mail-service
+          servicePort: 8080
