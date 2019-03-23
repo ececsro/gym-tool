@@ -12,21 +12,21 @@ spec:
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: csro-gym-tool-mysql
+  name: csro-mysql
 spec:
   selector:
     matchLabels:
-      app: csro-gym-tool-mysql
+      app: csro-mysql
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: csro-gym-tool-mysql
+        app: csro-mysql
     spec:
       containers:
       - image: mysql:5.6
-        name: csro-gym-tool-mysql
+        name: csro-mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: daigual_nolausa
@@ -34,7 +34,7 @@ spec:
           value: daigual_nolausa
         ports:
         - containerPort: 3306
-          name: csro-gym-tool-mysql
+          name: csro-mysql
         volumeMounts:
         - name: csro-gym-tool-mysql-persistent-storage
           mountPath: /var/lib/mysql
