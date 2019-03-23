@@ -1,52 +1,52 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: games-info-db
+  name: csro-gym-tool-db
 spec:
   ports:
   - port: 3306
   selector:
-    app: mysql
+    app: csro-gym-tool-mysql
   clusterIP: None
 ---
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: mysql
+  name: csro-gym-tool-mysql
 spec:
   selector:
     matchLabels:
-      app: mysql
+      app: csro-gym-tool-mysql
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: mysql
+        app: csro-gym-tool-mysql
     spec:
       containers:
       - image: mysql:5.6
-        name: mysql
+        name: csro-gym-tool-mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: gugus
+          value: daigual_nolausa
         - name: MYSQL_DATABASE
-          value: gamesinfo_db
+          value: daigual_nolausa
         ports:
         - containerPort: 3306
-          name: mysql
+          name: csro-gym-tool-mysql
         volumeMounts:
-        - name: mysql-persistent-storage
+        - name: csro-gym-tool-mysql-persistent-storage
           mountPath: /var/lib/mysql
       volumes:
-      - name: mysql-persistent-storage
+      - name: csro-gym-tool-mysql-persistent-storage
         persistentVolumeClaim:
-          claimName: mysql-pvc2
+          claimName: csro-gym-tool-mysql-pvc
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: mysql-pvc2
+  name: csro-gym-tool-mysql-pvc
 spec:
   storageClassName: manual
   accessModes:
@@ -58,7 +58,7 @@ spec:
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: mysql-pv2
+  name: csro-gym-tool-mysql-pv
   labels:
     type: local
 spec:
@@ -69,3 +69,4 @@ spec:
     - ReadWriteOnce
   hostPath:
     path: "/mnt/data"
+    
